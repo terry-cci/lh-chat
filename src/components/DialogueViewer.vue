@@ -62,7 +62,6 @@ onMounted(() => {
         :msg="msg"
         :user="user"
         :self-avatar="selfAvatar"
-        class="mb-1"
       />
     </div>
     <transition name="fade">
