@@ -65,7 +65,7 @@ onMounted(() => {
       />
     </div>
     <transition name="fade">
-      <scroll-hint v-if="showScrollHint" @backtobottom="backToBottom" />
+      <scroll-hint v-if="showScrollHint" @back-to-bottom="backToBottom" />
     </transition>
   </div>
 </template>

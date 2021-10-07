@@ -13,7 +13,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="flex-grow border-l flex h-full flex-col" v-if="user && messages">
+  <div class="flex-grow flex h-full flex-col" v-if="user && messages">
     <dialogue-viewer
       :user="user"
       :messages="messages"

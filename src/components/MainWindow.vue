@@ -168,6 +168,19 @@ function changeChat(userId: string) {
 }
 
 const activeMessages = ref(msgs);
+
+function addUser(id: string) {
+  id = id.trim();
+  if (id.length < 5 || id.length > 6) return;
+  if (!chatUsers.value.find((u) => u.id === id)) {
+    chatUsers.value.unshift({
+      nickname: "新增個人通訊",
+      id,
+    });
+  }
+
+  activeChatUserId.value = id;
+}
 </script>
 
 <template>
@@ -187,7 +200,8 @@ const activeMessages = ref(msgs);
     <chat-list
       :chats="chatUsers"
       :active-chat-user="activeChatUser"
-      @changeactivechat="changeChat"
+      @change-active-chat="changeChat"
+      @add-user="addUser"
     />
     <message-panel
       :user="activeChatUser"

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const emit = defineEmits<{ (e: "backtobottom"): void }>();
+const emit = defineEmits<{ (e: "backToBottom"): void }>();
 </script>
 
 <template>
@@ -33,7 +33,7 @@ const emit = defineEmits<{ (e: "backtobottom"): void }>();
         transition
         hover:translate-y-0.5
       "
-      @click="emit('backtobottom')"
+      @click="emit('backToBottom')"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
