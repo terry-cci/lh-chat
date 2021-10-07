@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
-import { UserInfo } from "./ChatList.vue";
+import { UserInfo } from "../menu/ChatList.vue";
 import { MessageInfo } from "./SingleMessage.vue";
 import DialogueViewer from "./DialogueViewer.vue";
 import InputBar from "./InputBar.vue";

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import { UserInfo } from "./ChatList.vue";
-import UserAvatar from "./UserAvatar.vue";
-import TextWithHighlight from "./TextWithHighlight.vue";
+import UserAvatar from "../common/UserAvatar.vue";
+import TextWithHighlight from "../common/TextWithHighlight.vue";
 
 const props = withDefaults(
   defineProps<{ user: UserInfo; active?: boolean; query?: string }>(),

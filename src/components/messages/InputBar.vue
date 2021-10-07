@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, watch, computed } from "vue";
-import { UserInfo } from "./ChatList.vue";
+import { UserInfo } from "../menu/ChatList.vue";
 import MessageFile from "./MessageFile.vue";
 import { FileInfo } from "./SingleMessage.vue";
 

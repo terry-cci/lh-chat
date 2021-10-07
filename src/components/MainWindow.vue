@@ -149,9 +149,9 @@ const msgs: MessageInfo[] = [
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import ChatList, { UserInfo } from "./ChatList.vue";
-import MessagePanel from "./MessagePanel.vue";
-import { MessageInfo, MessageType } from "./SingleMessage.vue";
+import ChatList, { UserInfo } from "./menu/ChatList.vue";
+import MessagePanel from "./Messages/MessagePanel.vue";
+import { MessageInfo, MessageType } from "./Messages/SingleMessage.vue";
 
 const chatUsers = ref(users);
 

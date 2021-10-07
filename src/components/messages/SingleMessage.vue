@@ -21,8 +21,8 @@ export type MessageInfo = {
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { UserInfo } from "./ChatList.vue";
-import UserAvatar from "./UserAvatar.vue";
+import { UserInfo } from "../menu/ChatList.vue";
+import UserAvatar from "../common/UserAvatar.vue";
 import MessageFile from "./MessageFile.vue";
 const props =
   defineProps<{ msg: MessageInfo; user: UserInfo; selfAvatar: string }>();
@@ -89,6 +89,7 @@ function formatTime(time: Date) {
           h-0
           transition
           duration-500
+          delay-500
           group-hover:opacity-100
           flex
         "

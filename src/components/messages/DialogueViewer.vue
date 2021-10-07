@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, computed } from "vue";
-import { UserInfo } from "./ChatList.vue";
+import { UserInfo } from "../menu/ChatList.vue";
 import SingleMessage, { MessageInfo } from "./SingleMessage.vue";
 import ScrollHint from "./ScrollHint.vue";
 

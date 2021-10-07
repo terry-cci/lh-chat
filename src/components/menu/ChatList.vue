@@ -39,7 +39,17 @@ const filteredChats = computed(() =>
       >
         <h2 class="text-lg">個人通訊</h2>
         <button
-          class="rounded bg-white border p-1 shadow-sm absolute right-2"
+          class="
+            rounded
+            bg-white
+            border
+            p-1
+            shadow-sm
+            absolute
+            right-2
+            hover:bg-gray-50
+            active:bg-gray-300
+          "
           title="新增通訊對象"
         >
           <svg
